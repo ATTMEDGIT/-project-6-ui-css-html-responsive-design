@@ -1,0 +1,887 @@
+/********************************************** Very small mobile device (up to 480px) *********************************************/
+@media (max-width: 480px) {
+    /* Header */
+
+    header {
+        position: relative;
+        z-index: 1000;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 30px 20px 30px;
+
+    }
+
+    /* Header > Menu */
+    .hamburger span {
+        background-color: rgb(0, 0, 0);
+        width: 100%;
+        height: 3px;
+        display: block;
+        transition: all 0.3s ease;
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+        cursor: pointer;
+        z-index: 1000;
+        position: fixed;
+        top: 25px;
+        right: 30px;
+    }
+
+    .menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 60%;
+        max-width: 300px;
+        height: 105vh;
+        background-color: #b83131;
+        z-index: 999;
+        transition: all 0.5s ease;
+        padding: 80px 20px 20px;
+
+    }
+
+    .menu ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu li {
+        margin-bottom: 15px;
+        display: block;
+    }
+
+    .menu a {
+        text-decoration: none;
+        padding: 10px;
+        display: block;
+        border-bottom: 1px solid #eee;
+    }
+
+    .menu-toggle:checked~.menu {
+        right: 0;
+    }
+
+    .menu-toggle:checked+.hamburger span:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+
+    .menu-toggle:checked+.hamburger span:nth-child(2) {
+        display: none;
+    }
+
+    .menu-toggle:checked+.hamburger span:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+
+    .menu-toggle:checked~.overlay {
+        display: block;
+    }
+
+    .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 98;
+    }
+
+    /* Banner-img  */
+    .img-banner {
+        all: revert;
+        position: relative;
+        margin-bottom: 80px;
+    }
+
+    .img-banner img {
+        margin-bottom: 30px;
+        margin-top: 60px;
+    }
+
+    h1 {
+        display: none;
+    }
+
+    .titel-banner {
+        display: block;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    h2 {
+        all: revert;
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .desc-banner {
+        all: revert;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+
+    }
+
+    .desc-banner p {
+        margin-bottom: 20px;
+        color: gray;
+        text-align: center;
+        font-size: 1.5em;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .desc-banner a {
+        text-decoration: none;
+        font-size: 1.5em;
+        font-weight: bolder;
+        color: rgb(255, 255, 255);
+    }
+
+    .desc-banner button {
+        border: none;
+        padding: 10px 15px 10px 15px;
+        background-color: #b83131;
+        border-radius: 100px;
+    }
+
+    .desc-banner .bt-two {
+        background-color: transparent;
+        border: 1px solid rgb(232, 15, 15);
+    }
+
+    .desc-banner .bt-two a {
+        color: rgb(0, 0, 0);
+    }
+
+    /* Marks */
+    .mark {
+        display: none;
+    }
+
+    hr {
+        display: block;
+    }
+
+    /* About */
+    .about {
+        all: revert;
+        margin-bottom: 80px;
+        background-color: #b83131;
+        color: white;
+        padding-bottom: 30px;
+    }
+
+    .about img {
+        all: revert;
+        width: 100%;
+    }
+
+    .about h3 {
+        all: revert;
+        font-size: 1.5em;
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    .about p {
+        all: revert;
+        padding-left: 4%;
+        padding-right: 4%;
+        text-align: center;
+    }
+
+    /* cars */
+    #cars {
+        all: revert;
+        font-weight: bold;
+        font-size: 1.5;
+        margin-bottom: 15px;
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+
+    .main-article {
+        all: revert;
+        margin-left: 4%;
+        margin-right: 4%;
+        margin-top: 15px;
+        margin-bottom: 300px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1%;
+
+    }
+
+    .sub-article img {
+        all: revert;
+        width: 100%;
+        box-shadow: 1px 2px 6px 1px rgba(72, 72, 72, 0.299);
+    }
+
+    .sub-article button {
+        all: revert;
+        border: none;
+        background-color: #b83131;
+        border-radius: 5px;
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+    }
+
+    .sub-article button a {
+        all: revert;
+        color: white;
+        text-decoration: none;
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+
+    .info-auto {
+        all: revert;
+    }
+
+    .info-auto:hover {
+        all: revert;
+
+    }
+
+    .sub-article p {
+        all: revert;
+        font-size: 1.5em;
+    }
+
+    .sub-article .preis {
+        font-size: 1.5em !important;
+
+    }
+
+    .info {
+        all: revert;
+        background-color: rgba(255, 184, 184, 0.16);
+        padding: 10px;
+        box-shadow: 1px 2px 6px 1px rgba(72, 72, 72, 0.299);
+
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    /* Services */
+    .services {
+        all: revert;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 4%;
+        margin-right: 4%;
+        text-align: center;
+        background-color: #b83131;
+        color: white;
+        padding: 10px;
+        padding-top: 50px;
+
+    }
+
+    .services p {
+        margin-bottom: 3em;
+        font-size: 1.5em;
+    }
+
+    .services i {
+        /* all: revert; */
+        font-size: 3em;
+        margin-bottom: 50px;
+    }
+
+    .services h4 {
+        all: revert;
+        margin-top: -15px;
+        font-size: 1.5em;
+    }
+
+    /* Marks */
+    .mark {
+        all: revert;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+        margin-left: 4%;
+        margin-right: 4%;
+
+    }
+
+    .mark img {
+        margin: 0 auto;
+        opacity: 0.2;
+    }
+
+    /* footer-image */
+    .footer-image {
+        all: revert;
+        position: relative;
+    }
+
+    .footer-image img {
+        all: revert;
+        width: 100%;
+
+    }
+
+    .h5 {
+        all: revert;
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        width: 300px;
+        font-size: 1.5em;
+        color: white;
+        z-index: 3;
+    }
+
+
+    /* footer */
+    footer {
+        all: revert;
+        padding: 4%;
+        padding: 4%;
+        background-color: #b83131;
+        padding-top: 50px;
+        padding-bottom: 30px;
+        color: white;
+        margin-top: -4px;
+
+    }
+
+    .sub-footer {
+        all: revert;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+    }
+
+    .quick-links {
+        all: revert;
+
+    }
+
+    .links {
+        all: revert;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .links a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        transition: color 0.5s ease;
+        margin-bottom: 10px;
+        font-size: 1.5em;
+    }
+
+    .links a:hover {
+        color: yellow;
+    }
+
+    .Contact-info p{
+    font-size: 1.5em;
+}
+
+    .social a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        transition: color 0.5s ease;
+        margin-bottom: 10px;
+        font-size: 1.5em;
+
+    }
+
+    .social i{
+        font-size: 1.5em;
+    }
+
+    .social a:hover {
+        color: yellow;
+    }
+
+    .social {
+        all: revert;
+
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+/********************************************** Medium mobile device (481px to 767px) **************************************/
+@media (min-width: 481px) and (max-width: 767px) {
+    /* Design adjustments for normal cell phones */
+
+    /* Header */
+    .logo{
+        font-size: 2em;
+    }
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 30px 20px 30px;
+
+        position: relative;
+        z-index: 1000;
+
+    }
+
+    /* Header > Menu */
+    .hamburger span {
+        background-color: rgb(0, 0, 0);
+        width: 100%;
+        height: 3px;
+        display: block;
+        transition: all 0.3s ease;
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+        cursor: pointer;
+        z-index: 1000;
+        position: fixed;
+        top: 25px;
+        right: 30px;
+    }
+
+    .menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        max-width: 300px;
+        height: 100vh;
+        background-color: #b83131;
+        z-index: 999;
+        transition: all 0.5s ease;
+        padding: 80px 20px 20px;
+    }
+
+    .menu ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu li {
+        margin-bottom: 15px;
+        display: block;
+    }
+
+    .menu a {
+        text-decoration: none;
+        padding: 10px;
+        display: block;
+        border-bottom: 1px solid #eee;
+        font-size: 1.5em;
+    }
+
+    .menu-toggle:checked~.menu {
+        right: 0;
+    }
+
+    .menu-toggle:checked+.hamburger span:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+
+    .menu-toggle:checked+.hamburger span:nth-child(2) {
+        display: none;
+    }
+
+    .menu-toggle:checked+.hamburger span:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+
+    .menu-toggle:checked~.overlay {
+        display: block;
+    }
+
+    .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 998;
+    }
+
+
+    /* Banner-img  */
+    .img-banner {
+        all: revert;
+        position: relative;
+        margin-bottom: 80px;
+    }
+
+    .img-banner img {
+        margin-bottom: 30px;
+    }
+
+    h1 {
+        display: none;
+    }
+
+    .titel-banner {
+        display: block;
+        position: absolute;
+        top: 3%;
+        left: 30px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        color: white;
+    }
+
+    .desc-banner {
+        all: revert;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .desc-banner p {
+        margin-bottom: 20px;
+        color: gray;
+        font-size: 1.8em;
+    }
+
+    .desc-banner a {
+        text-decoration: none;
+        font-size: 1.8em;
+        font-weight: bolder;
+        color: rgb(255, 255, 255);
+    }
+
+    .desc-banner button {
+        border: none;
+        padding: 10px 15px 10px 15px;
+        background-color: #b83131;
+        border-radius: 100px;
+        margin-right: 10px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+
+    .desc-banner .bt-two {
+        background-color: transparent;
+        border: 1px solid rgb(232, 15, 15);
+    }
+
+    .desc-banner .bt-two a {
+        color: rgb(0, 0, 0);
+    }
+
+    /* Marks */
+    .mark {
+        display: none;
+    }
+
+    hr {
+        display: none;
+    }
+
+    /* About */
+    .about {
+        all: revert;
+        margin-bottom: 80px;
+        background-color: #b83131;
+        color: white;
+        padding-bottom: 30px;
+    }
+
+    .about img {
+        all: revert;
+        width: 100%;
+    }
+
+    .about h3 {
+        all: revert;
+        font-size: 1.8em;
+        text-align: center;
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    .about p {
+        all: revert;
+        padding-left: 4%;
+        padding-right: 4%;
+        font-size: 1.8em;
+        text-align: center;
+    }
+
+    /* cars */
+    #cars {
+        all: revert;
+        font-weight: bold;
+        font-size: 1.8em;
+        margin-bottom: 15px;
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+
+    .main-article {
+        all: revert;
+        margin-left: 4%;
+        margin-right: 4%;
+        margin-top: 15px;
+        margin-bottom: 300px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1%;
+
+        margin-bottom: 450px;
+
+    }
+
+    .sub-article img {
+        all: revert;
+        width: 100%;
+        box-shadow: 1px 2px 6px 1px rgba(72, 72, 72, 0.299);
+    }
+
+    .sub-article button {
+        all: revert;
+        border: none;
+        background-color: #b83131;
+        border-radius: 5px;
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+    }
+
+    .sub-article button a {
+        all: revert;
+        color: white;
+        text-decoration: none;
+        font-size: 2em;
+        font-weight: bold;
+    }
+
+    .info-auto {
+        all: revert;
+    }
+
+    .info-auto:hover {
+        all: revert;
+
+    }
+
+    .sub-article p {
+        all: revert;
+        font-size: 1.8em;
+    }
+
+    .sub-article .preis {
+        font-size: 1.8em !important;
+
+    }
+
+    .info {
+        all: revert;
+        background-color: rgba(255, 184, 184, 0.16);
+        padding: 10px;
+        box-shadow: 1px 2px 6px 1px rgba(72, 72, 72, 0.299);
+
+
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    /* Services */
+    .services {
+        all: revert;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 4%;
+        margin-right: 4%;
+        text-align: center;
+        background-color: #b83131;
+        color: white;
+        padding: 15px;
+        padding-top: 50px;
+
+        margin-bottom: 80px;
+
+    }
+
+    .services p {
+        margin-bottom: 3em;
+        font-size: 1.8em;
+    }
+
+    .services i {
+        /* all: revert; */
+        font-size: 3em;
+        margin-bottom: 50px;
+    }
+
+    .services h4 {
+        all: revert;
+        margin-top: -15px;
+        font-size: 1.8em;
+    }
+
+    /* Marks */
+    .mark {
+        all: revert;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+        margin-left: 4%;
+        margin-right: 4%;
+
+        margin-bottom: 80px;
+
+    }
+
+    .mark img {
+        margin: 0 auto;
+        opacity: 0.2;
+    }
+
+    /* footer-image */
+    .footer-image {
+        all: revert;
+        position: relative;
+    }
+
+    .footer-image img {
+        all: revert;
+        width: 100%;
+
+    }
+
+    .h5 {
+        all: revert;
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        width: 500px;
+        font-size: 1.8em;
+        color: white;
+        z-index: 3;
+    }
+
+
+    /* footer */
+    footer {
+        all: revert;
+        padding: 4%;
+        padding: 4%;
+        background-color: #b83131;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        color: white;
+        margin-top: -4px;
+
+    }
+
+    .sub-footer {
+        all: revert;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        gap: 30px;
+
+    }
+
+    .quick-links {
+        all: revert;
+
+    }
+
+    .links {
+        all: revert;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .links a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        transition: color 0.5s ease;
+        margin-bottom: 10px;
+    }
+
+    .links a:hover {
+        color: yellow;
+    }
+
+    .social a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        transition: color 0.5s ease;
+        margin-bottom: 10px;
+
+    }
+
+    .social a:hover {
+        color: yellow;
+    }
+
+    .social {
+        all: revert;
+
+    }
+
+
+
+}

@@ -1,0 +1,119 @@
+/* ************************************************* laptop: 1024px > 1279px ************************************************* */
+@media (min-width: 1023px) and (max-width: 1279px) {
+
+    /*  Banner-img */
+    .img {
+        width: 100%;
+    }
+
+    .img-banner {
+        position: relative;
+    }
+
+    .desc-banner {
+        position: absolute;
+        top: 13%;
+        left: 0;
+        color: white;
+        padding-left: 50px;
+        line-height: 1.6;
+    }
+
+    .desc-banner h1 {
+        font-size: 1.7em;
+    }
+
+    .desc-banner p {
+        margin-bottom: 20px;
+        margin-top: -10px;
+        width: 350px;
+    }
+
+    .desc-banner a {
+        text-decoration: none;
+        font-size: 1em;
+        font-weight: bolder;
+        color: black;
+    }
+
+    .desc-banner button {
+        border: none;
+        padding: 10px 15px 10px 15px;
+        background-color: yellow;
+        border-radius: 100px;
+    }
+
+    .desc-banner .bt-two {
+        background-color: transparent;
+        border: 1px solid white;
+
+    }
+
+    .desc-banner .bt-two a {
+        color: white;
+    }
+
+    .titel-banner {
+        display: none;
+    }
+
+    /* Marks */
+    .mark {
+        all: revert;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        gap: 8%; 
+        margin-left: 4%;
+        margin-right: 4%;
+
+        margin-bottom: 100px;
+
+    }
+
+    .mark img {
+        margin: 0 auto;
+        opacity: 0.2;
+        width: 170px !important;
+
+    }
+
+
+}
+
+
+/* ************************************************* 1280px > 1439px ************************************ */
+@media (min-width: 1280px) and (max-width: 1439px) {
+
+    /* Banner-img */
+    .desc-banner h1 {
+        font-size: 2.4em;
+    }
+
+    .desc-banner {
+        margin-top: -30px;
+    }
+
+    .desc-banner p {
+        margin-bottom: 13px;
+        margin-top: -10px;
+        width: 500px;
+    }
+
+}
+
+
+/* *************************************** (Full HD):  1440px ****************************************  */
+@media (min-width: 1440px) {
+
+    /* Banner-img */
+    .desc-banner h1 {
+        font-size: 3rem;
+    }
+
+    .desc-banner p {
+        margin-bottom: 20px;
+        margin-top: -10px;
+        width: 500px;
+    }
+}
