@@ -207,23 +207,24 @@
         font-size: 1.5em;
         padding-left: 4%;
         padding-right: 4%;
+        text-align: center !important;
     }
 
     .about p {
         all: revert;
         padding-left: 4%;
         padding-right: 4%;
-        text-align: center;
+        text-align: center !important;
     }
 
     /* cars */
     #cars {
         all: revert;
         font-weight: bold;
-        font-size: 1.5;
-        margin-bottom: 15px;
-        margin-left: 4%;
-        margin-right: 4%;
+        font-size: 1.5em;
+        margin-bottom: 20px;
+        padding-left: 4%;
+
     }
 
     .main-article {
@@ -361,7 +362,7 @@
         top: 10%;
         left: 10%;
         width: 300px;
-        font-size: 1.5em;
+        font-size: 1.7em;
         color: white;
         z-index: 3;
     }
@@ -412,9 +413,9 @@
         color: yellow;
     }
 
-    .Contact-info p{
-    font-size: 1.5em;
-}
+    .Contact-info p {
+        font-size: 1.5em;
+    }
 
     .social a {
         text-decoration: none;
@@ -425,7 +426,7 @@
 
     }
 
-    .social i{
+    .social i {
         font-size: 1.5em;
     }
 
@@ -454,9 +455,10 @@
     /* Design adjustments for normal cell phones */
 
     /* Header */
-    .logo{
+    .logo {
         font-size: 2em;
     }
+
     .header {
         display: flex;
         justify-content: space-between;

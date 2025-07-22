@@ -13,7 +13,7 @@
         z-index: 1000;
     }
 
-    .logo{
+    .logo {
         font-size: 2em;
     }
 
@@ -217,10 +217,10 @@
     }
 
     /* cars */
-    #cars {
+    #cars p {
         all: revert;
         font-weight: bold;
-        font-size: 1.8em;
+        font-size: 2em;
         margin-bottom: 15px;
         margin-left: 4%;
         margin-right: 4%;
@@ -419,9 +419,9 @@
         color: yellow;
     }
 
-       .Contact-info p{
-    font-size: 1.8em;
-}
+    .Contact-info p {
+        font-size: 1.8em;
+    }
 
     .social a {
         text-decoration: none;
@@ -432,7 +432,7 @@
 
     }
 
-    .social i{
+    .social i {
         font-size: 2em;
     }
 
