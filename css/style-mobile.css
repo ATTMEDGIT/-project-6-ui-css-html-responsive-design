@@ -681,8 +681,8 @@
         margin-top: 15px;
         margin-bottom: 300px;
         display: grid;
-        grid-template-columns: 1fr;
-        gap: 1%;
+        grid-template-columns: 1fr 1fr;
+        gap: 2%;
 
         margin-bottom: 450px;
 
@@ -692,6 +692,7 @@
         all: revert;
         width: 100%;
         box-shadow: 1px 2px 6px 1px rgba(72, 72, 72, 0.299);
+        height: 280px;
     }
 
     .sub-article button {
