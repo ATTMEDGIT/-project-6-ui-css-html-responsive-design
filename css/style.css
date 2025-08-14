@@ -11,7 +11,16 @@ html {
 }
 
 
-body {}
+body,
+html {
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0 !important;
+    padding: 0 !important;
+
+}
+
+
 
 /* Header */
 .logo {
@@ -36,7 +45,6 @@ input {
 
     position: fixed;
     width: 100%;
-
 }
 
 /* Menu */
@@ -49,10 +57,11 @@ input {
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-weight: bold;
-    transition: color 0.5s ease;
 
+    transition: color 0.5s ease;
     position: relative;
     padding-bottom: 3px;
+    font-size: 1.1em;
 }
 
 .menu ul li a::after {
@@ -92,9 +101,14 @@ input {
     line-height: 1.6;
 }
 
+.desc-banner h1 {
+    width: 80%;
+}
+
 .desc-banner p {
     margin-bottom: 20px;
     width: 370px;
+    font-size: 1.1em;
 }
 
 .desc-banner a {
@@ -111,9 +125,11 @@ input {
     border-radius: 100px;
 }
 
-.desc-banner .bt-two {
+.desc-banner>div>button:nth-child(2) {
     background-color: transparent;
     border: 1px solid white;
+    padding: 10px 15px 10px 15px;
+
 
 }
 
@@ -156,14 +172,16 @@ input {
     width: 500px;
     line-height: 1.5;
     font-size: 18px;
+    font-size: 1.1em;
 }
 
 /* cars */
-#cars{
-    padding-left: 50px; 
-    font-weight: bold; 
+#cars {
+    padding-left: 50px;
+    font-weight: bold;
     font-size: 23px;
 }
+
 .main-article {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -236,9 +254,9 @@ input {
 
 /* Services */
 .services {
-    padding: 50px;
+    padding: 50px 50px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
     gap: 20px;
@@ -334,7 +352,7 @@ footer {
     gap: 10px;
 }
 
-.links a{
+.links a {
     text-decoration: none;
     color: rgb(255, 255, 255);
     transition: color 0.5s ease;
@@ -362,6 +380,6 @@ footer {
     gap: 10px;
 }
 
-.Social-media{
+.Social-media {
     margin-bottom: 10px;
 }

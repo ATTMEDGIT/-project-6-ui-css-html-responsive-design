@@ -67,6 +67,7 @@
         padding: 10px;
         display: block;
         border-bottom: 1px solid #eee;
+        font-size: 1.3em;
     }
 
     .menu-toggle:checked~.menu {
@@ -126,6 +127,7 @@
         all: revert;
         font-size: 1.5em;
         text-align: center;
+        padding: 3%;
     }
 
     .desc-banner {
@@ -170,9 +172,11 @@
         border-radius: 100px;
     }
 
-    .desc-banner .bt-two {
+    .desc-banner>div>button:nth-child(2) {
         background-color: transparent;
         border: 1px solid rgb(232, 15, 15);
+        padding: 10px 23px;
+
     }
 
     .desc-banner .bt-two a {
@@ -215,6 +219,7 @@
         padding-left: 4%;
         padding-right: 4%;
         text-align: center !important;
+        font-size: 1.2em;
     }
 
     /* cars */
@@ -253,6 +258,7 @@
         padding: 10px;
         margin-top: 10px;
         margin-bottom: 10px;
+        width: 100%;
 
     }
 
@@ -289,8 +295,8 @@
         padding: 10px;
         box-shadow: 1px 2px 6px 1px rgba(72, 72, 72, 0.299);
 
-        display: flex;
-        flex-direction: column;
+        /* display: flex;
+        flex-direction: column; */
     }
 
 
@@ -312,12 +318,12 @@
 
     .services p {
         margin-bottom: 3em;
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
 
     .services i {
         /* all: revert; */
-        font-size: 3em;
+        font-size: 4em;
         margin-bottom: 50px;
     }
 
@@ -406,7 +412,7 @@
         color: rgb(255, 255, 255);
         transition: color 0.5s ease;
         margin-bottom: 10px;
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
 
     .links a:hover {
@@ -414,7 +420,7 @@
     }
 
     .Contact-info p {
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
 
     .social a {
@@ -427,7 +433,9 @@
     }
 
     .social i {
-        font-size: 1.5em;
+        font-size: 1.3em;
+        margin-right: 8px;
+
     }
 
     .social a:hover {
@@ -521,7 +529,7 @@
         padding: 10px;
         display: block;
         border-bottom: 1px solid #eee;
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
 
     .menu-toggle:checked~.menu {
@@ -581,6 +589,7 @@
     h2 {
         font-size: 1.5rem;
         color: white;
+        width: 80%;
     }
 
     .desc-banner {
@@ -616,13 +625,19 @@
         margin-bottom: 15px;
     }
 
-    .desc-banner .bt-two {
+    .desc-banner>div>button:nth-child(2) {
         background-color: transparent;
         border: 1px solid rgb(232, 15, 15);
+        padding: 10px 23px;
+
+
     }
 
-    .desc-banner .bt-two a {
+    .desc-banner .button .bt-two a {
         color: rgb(0, 0, 0);
+        font-size: 1.8em;
+
+
     }
 
     /* Marks */
@@ -703,6 +718,7 @@
         padding: 10px;
         margin-top: 10px;
         margin-bottom: 10px;
+        width: 100%;
 
     }
 
@@ -725,7 +741,7 @@
 
     .sub-article p {
         all: revert;
-        font-size: 1.8em;
+        font-size: 1.3em;
     }
 
     .sub-article .preis {
@@ -740,8 +756,8 @@
         box-shadow: 1px 2px 6px 1px rgba(72, 72, 72, 0.299);
 
 
-        display: flex;
-        flex-direction: column;
+        /* display: flex;
+        flex-direction: column; */
     }
 
 
@@ -765,7 +781,7 @@
 
     .services p {
         margin-bottom: 3em;
-        font-size: 1.8em;
+        font-size: 1.3em;
     }
 
     .services i {
@@ -878,6 +894,11 @@
 
     .social a:hover {
         color: yellow;
+    }
+
+    .social i {
+        font-size: 1.3em;
+        margin-right: 8px;
     }
 
     .social {

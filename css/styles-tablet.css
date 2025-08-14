@@ -47,7 +47,7 @@
         width: 80%;
         max-width: 300px;
         height: 100vh;
-        background-color: red;
+        background-color: #b83131;
         z-index: 999;
         transition: all 0.5s ease;
         padding: 80px 20px 20px;
@@ -70,6 +70,7 @@
         padding: 10px;
         display: block;
         border-bottom: 1px solid #eee;
+        font-size: 1.3em;
     }
 
     .menu-toggle:checked~.menu {
@@ -126,9 +127,10 @@
     }
 
     h2 {
-        font-size: 2.5rem;
+        font-size: 2rem;
         color: white;
         padding-left: 20px;
+        width: 70%;
     }
 
     .desc-banner {
@@ -142,7 +144,7 @@
 
     .desc-banner p {
         margin-bottom: 20px;
-        font-size: 2em;
+        font-size: 1.3em;
         color: gray;
         width: 700px;
         text-align: center;
@@ -150,12 +152,12 @@
 
     .desc-banner a {
         text-decoration: none;
-        font-size: 2em;
+        font-size: 1.5em;
         font-weight: bolder;
         color: rgb(255, 255, 255);
     }
 
-    .desc-banner button {
+    .desc-banner>div>button {
         border: none;
         padding: 10px 15px 10px 15px;
         background-color: #b83131;
@@ -163,9 +165,11 @@
         margin-right: 10px;
     }
 
-    .desc-banner .bt-two {
+    .desc-banner>div>button:nth-child(2) {
         background-color: transparent;
         border: 1px solid rgb(232, 15, 15);
+        padding: 10px 15px 10px 15px;
+
     }
 
     .desc-banner .bt-two a {
@@ -173,7 +177,7 @@
     }
 
     h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     /* Marks */
@@ -193,6 +197,7 @@
         background-color: #b83131;
         color: white;
         padding-bottom: 30px;
+        line-height: 1.5em;
     }
 
     .about img {
@@ -212,8 +217,9 @@
         all: revert;
         padding-left: 4%;
         padding-right: 4%;
-        font-size: 2em;
+        font-size: 1.3em;
         text-align: center;
+        line-height: 1.5;
     }
 
     /* cars */
@@ -254,6 +260,7 @@
         padding: 10px;
         margin-top: 10px;
         margin-bottom: 10px;
+        width: 100%;
 
     }
 
@@ -289,9 +296,6 @@
         background-color: rgba(255, 184, 184, 0.16);
         padding: 10px;
         box-shadow: 1px 2px 6px 1px rgba(72, 72, 72, 0.299);
-
-        display: flex;
-        flex-direction: column;
     }
 
 
@@ -316,7 +320,8 @@
 
     .services p {
         margin-bottom: 3em;
-        font-size: 2em;
+        font-size: 1.3em;
+        line-height: 1.5;
     }
 
     .services i {
@@ -367,8 +372,8 @@
         position: absolute;
         top: 10%;
         left: 10%;
-        width: 300px;
-        font-size: 1.8em;
+        width: 50%;
+        font-size: 3em;
         color: white;
         z-index: 3;
     }
@@ -413,7 +418,7 @@
         color: rgb(255, 255, 255);
         transition: color 0.5s ease;
         margin-bottom: 10px;
-        font-size: 1.8em;
+        font-size: 1.5em;
     }
 
     .links a:hover {
@@ -421,7 +426,7 @@
     }
 
     .Contact-info p {
-        font-size: 1.8em;
+        font-size: 1.3em;
     }
 
     .social a {
@@ -429,12 +434,13 @@
         color: rgb(255, 255, 255);
         transition: color 0.5s ease;
         margin-bottom: 10px;
-        font-size: 1.8em;
+        font-size: 1.3em;
 
     }
 
     .social i {
-        font-size: 2em;
+        font-size: 1.5em;
+        margin-right: 8px;
     }
 
     .social a:hover {
