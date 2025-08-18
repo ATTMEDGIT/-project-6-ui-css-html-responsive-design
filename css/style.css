@@ -383,3 +383,27 @@ footer {
 .Social-media {
     margin-bottom: 10px;
 }
+
+/* Back To Home */
+.sub-back {
+    position: fixed;
+    left: 1%;
+    bottom: 3%;
+    background-color: #dfdfdf;
+    border: 1px solid rgba(0, 0, 0, 0.265);
+    padding: 8px;
+    border-radius: 200px;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.116);
+    width: 49px;
+    height: 49px;
+    z-index: 1000;
+}
+
+.sub-back p {
+    width: 3%;
+    font-size: 1.5em;
+}
+
+.sub-back>p>a {
+    text-decoration: none;
+}
